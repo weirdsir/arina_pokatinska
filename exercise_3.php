@@ -53,11 +53,28 @@ else {
 
 echo "<h3>#4</h3>";
 
+$name = "person";
+$age = 22;
+
+if ($age >= 18){
+    echo $name . " is eligible for voting.";
+}
+else {
+    echo "Unfortunately, " . $name . " is not eligible for voting.";
+}
+
 //5
 
 echo "<h3>#5</h3>";
 
-$numbers = array(1,2,3,4,5,6,7,8);
+$a = 8;
+while ($a>=1){
+    for ($i = 1; $i <= $a; $i++) {
+    echo $i;
+    }
+    echo "<br>";
+    $a --;
+}
 
 //6
 
@@ -76,5 +93,7 @@ while ($a<8){
 
 echo "<h3>#7</h3>";
 
+echo "<a href= https://github.com/weirdsir/Web-development-project.git> Git repo<br></a>";
+echo "<a href = http://shell.hamk.fi/~bbcap21_10> Website </a>";
 
 ?>
