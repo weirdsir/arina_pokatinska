@@ -93,7 +93,4 @@ while ($a<8){
 
 echo "<h3>#7</h3>";
 
-echo "<a href= https://github.com/weirdsir/Web-development-project.git> Git repo<br></a>";
-echo "<a href = http://shell.hamk.fi/~bbcap21_10> Website </a>";
-
 ?>
