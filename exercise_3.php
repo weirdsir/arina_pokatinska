@@ -96,4 +96,7 @@ while ($a<8){
 
 echo "<h3>#7</h3>";
 
+echo"<a href=\" https://weirdsir.github.io/Web-development-project/\">Pages link <br></a>";
+echo "<a href=\"https://github.com/weirdsir/Web-development-project\">Repository link</a>";
+
 ?>
