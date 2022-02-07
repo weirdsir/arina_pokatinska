@@ -103,9 +103,20 @@ echo "<hr><h2> Calculation average temperature: </h2>";
 $month_temp = "78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 81, 76, 73,
 68, 72, 73, 75, 65, 74, 63, 67, 65, 64, 68, 73, 75, 79, 73";
 // what is explode and what does the below code do? : 
+
+// explode is used to separate one string into an array of strings based on the separator;
+// in this example ',' is the separator which means,
+// that the string 'month_temp' will be separated by splitting it on the boundaries formed by ',';
+// the separated strings are saved into the 'temp_array' array
+
 $temp_array = explode(',', $month_temp);
 $tot_temp = 0;
 // What is count?
+
+// count is used to count all elements in an array (returns the length of an array)
+// 'tot_temp' that was set to 0 before is used to sum all the temperatures in the array
+// the following foreach loop adds up all array elements
+
 $temp_array_length = count($temp_array);
 foreach($temp_array as $temp)
 {
@@ -115,6 +126,10 @@ foreach($temp_array as $temp)
  echo "Average Temperature is : ".$avg_high_temp."
 "; 
 // what does sort do?
+
+// sort is used to place the values in the array in ascending order;
+// if two values arte equal their original order is kept
+
 sort($temp_array);
 echo "<br> List of five lowest temperatures :";
 for ($i=0; $i< 5; $i++)
@@ -123,6 +138,11 @@ echo $temp_array[$i].", ";
 }
 echo "<br>List of five highest temperatures :";
 // explain the following loop
+
+// the following loop prints out the last five elements of the array
+// i changes from total length of the array - 5 to total length of the array
+// those are the last five indexes which means that the echo prints the last five elements (the comma is there for separation)
+
 for ($i=($temp_array_length-5); $i< ($temp_array_length); $i++)
 {
 echo $temp_array[$i].", ";
