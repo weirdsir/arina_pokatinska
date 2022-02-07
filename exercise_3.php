@@ -53,11 +53,14 @@ else {
 
 echo "<h3>#4</h3>";
 
-$name = "person";
-$age = 22;
+echo "<form method=\"post\">
+Name: <input type=\"text\" name=\"name\"><br>
+Age: <input type=\"text\" name=\"age\"><br>
+<input type=\"submit\">
+</form>";
 
-if ($age >= 18){
-    echo $name . " is eligible for voting.";
+if ($_POST["age"] >= 18){
+    echo $_POST["name"] . " is eligible for voting.";
 }
 else {
     echo "Unfortunately, " . $name . " is not eligible for voting.";
